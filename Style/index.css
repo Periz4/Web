@@ -9,12 +9,20 @@ header{
     border: 5px solid rgb(197, 172, 172);
 }
 nav{
-    height: 25vh;
+    height: 50vh;
     background-color: brown;
-    color:rgb(0, 0, 0)
+    color:rgb(0, 0, 0);
+    padding: 75px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
     
 }
-div{
-    background-color: coral;
-    height: 10vh;
+.tarjeta{
+    background-color: yellow;
+    height: 6vh;
+    text-align: center;
+    border: 5px solid green;
+    padding-top: 38px;
+    
 }
