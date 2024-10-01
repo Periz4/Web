@@ -12,7 +12,7 @@ nav{
     height: 50vh;
     background-color: brown;
     color:rgb(0, 0, 0);
-    padding: 75px;
+    padding: 150px;
     display: flex;
     flex-direction:column;
     justify-content: space-between;
@@ -20,12 +20,12 @@ nav{
 }
 .tarjeta{
     background-color: yellow;
-    height: 6vh;
+    height: 18vh;
     text-align: center;
     border: 5px solid green;
-    padding-top: 38px;
-    
+    display:flexbox;
+    padding: 15px;
 }
 img{
-    height: 10vh;
+    height: 65%;
 }
