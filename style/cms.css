@@ -1,6 +1,6 @@
 #CMS{
-    padding: 50px;
-
+    text-align: center;
+    
 }
 
 body{
@@ -9,4 +9,10 @@ body{
 button{
     background-color: black;
     color: aliceblue;
+}
+
+section{
+    
+
+
 }
