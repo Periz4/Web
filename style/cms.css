@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: blue;
+    background-color: rgb(124, 182, 192);
 }
 button{
     background-color: black;
@@ -12,6 +12,9 @@ button{
 }
 
 section{
+    padding-left: 50px;
+    padding-right: 1000px;
+
     
 
 
