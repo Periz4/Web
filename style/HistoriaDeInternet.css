@@ -2,7 +2,9 @@
     text-align: center;
 }
 #h4{
+    padding-left: 50px;
     text-align: justify;
+    padding-top: 50px;
 }
 #parrafo{
     text-align: justify;
@@ -14,4 +16,8 @@ body{
 button{
     background-color: black;
     color: aliceblue;
+}
+section{
+    padding-left: 50px;
+    padding-right: 750px;
 }
