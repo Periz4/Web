@@ -21,3 +21,8 @@ section{
     padding-left: 50px;
     padding-right: 750px;
 }
+.fotos{
+    text-align: left;
+    height: 50vh;
+    size: 50vh;
+}
