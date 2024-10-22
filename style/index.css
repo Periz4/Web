@@ -37,8 +37,13 @@ nav{
 img{
     height: 65%;
 }
-@media (min-width: 720px){
+
+
+@media (min-width: 720px) {
     nav{
         flex-direction: row;
-    }
+    } 
+
+    
 }
+

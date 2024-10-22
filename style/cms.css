@@ -1,23 +1,41 @@
 #CMS{
     text-align: center;
-    
+}
+#titulo2{
+    padding-left: 20px;  
+    background-color: #679b23; 
+}
+#titulo1{
+    background-color: #3964b4;
+}
+#maintitle{
+    background-color: rgb(204, 119, 40);
 }
 
+
 body{
-    background-color: rgb(124, 182, 192);
+    background-color: rgb(204, 142, 92);
 }
 button{
     background-color: black;
     color: aliceblue;
 }
 
-
-section{
-    padding-left: 50px;
-    padding-right: 1000px;
-
-    
-
+main{
+    display: flex;
 
 }
+section{
+    
+    border: 0px black solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 50%;
+
+}
+
+img{
+    height: 80px;
+}
+
 
