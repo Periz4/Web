@@ -8,6 +8,8 @@
 }
 #parrafo{
     text-align: justify;
+    width: 50%;
+    background-color: brown;
 }
     
 body{
@@ -16,13 +18,21 @@ body{
 button{
     background-color: black;
     color: aliceblue;
+
 }
 section{
     padding-left: 50px;
-    padding-right: 750px;
+    padding-right: 50px;
+    display:flex;
+    background-color: aqua;
 }
-.fotos{
-    text-align: left;
-    height: 50vh;
-    size: 50vh;
+img{
+    height: 200px;
+    padding-right: 50px;
+}
+#fotos{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

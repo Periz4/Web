@@ -30,6 +30,10 @@ nav{
     display:flexbox;
     padding: 15px;
 }
+.tarjeta:hover{
+    background-color: yellow;
+    font-size: 18px;
+}
 img{
     height: 65%;
 }
