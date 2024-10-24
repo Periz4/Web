@@ -1,7 +1,38 @@
+#web2{
+    text-align: center;
+}
+#h4{
+    padding-left: 50px;
+    text-align: justify;
+    padding-top: 50px;
+}
+#parrafo{
+    text-align: justify;
+    width: 50%;
+}
+    
 body{
-    background-color: greenyellow;
+    background-color: rgb(204, 142, 92);
 }
 button{
     background-color: black;
     color: aliceblue;
+
+}
+section{
+    padding-left: 50px;
+    padding-right: 50px;
+    display:flex;
+    justify-content: space-between;
+}
+img{
+    height: 200px;
+    
+}
+#fotos{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
 }
