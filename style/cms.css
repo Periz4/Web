@@ -38,4 +38,11 @@ img{
     height: 80px;
 }
 
-
+@media (max-width: 720px) {
+    main{
+        flex-direction: column;
+    } 
+    section{
+        width: 95%;
+    }
+}
