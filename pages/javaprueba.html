@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="boton()">
+        clikame
+     </button>
+     <div>
+       <p></p>
+       <p></p>
+     </div>
+     <button onclick="cambiarColor()">
+        cambiarColor
+     </button>
+</body>
+<script>
+    function boton(){
+  var ps =  document.getElementsByTagName("p")
+  ps[0].innerHTML="ola k ase"
+  ps[1].innerHTML="Hola que haces"
+}
+    function cambiarColor(){
+        var ps =  document.getElementsByTagName("p")
+        ps[0].style.color = "green"
+    }
+</script>
+</html>
