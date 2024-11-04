@@ -109,6 +109,8 @@
                 <input type="checkbox" name="p2" id="">CMS en la nube
                 <input type="checkbox" name="p2" id="">CMS propietario
             </label>
+            <input type="submit" value="Comprobar"><br><br>
+            <input type="reset" value="Reiniciar" onclick="cleanImages()">
         </form> 
     </section>
 
@@ -116,7 +118,10 @@
 
 
 <script>
-    function (check[p1]) 
+    document.getElementById("formQuiz")
+    .addEventListener('submit', checkQuiz)
+
+    
 </script>
 </body>
 </html>
