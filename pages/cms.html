@@ -94,24 +94,31 @@
 
     
     </section>
-    <section>
-        <form action="">
-            <label for="">
-                <p>¿Qué sistema de gestión de contenido es usado por eimportantesmpresas  a nivel gubernamental?</p>
-                <input type="radio" name="p1" id="">WordPres
-                <input type="radio" name="p1" id="">Drupal
-                <input type="radio" name="p1" id="">PrestaShop
-                <input type="radio" name="p1" id="">Magenta
-            </label>
-            <label for="">
-                <p>¿Cuál de los siguentes tipos de CMS es de licencia gratuita?</p>
-                <input type="checkbox" name="p2" id="">CMS de código abierto
-                <input type="checkbox" name="p2" id="">CMS en la nube
-                <input type="checkbox" name="p2" id="">CMS propietario
-            </label>
-            <input type="submit" value="Comprobar"><br><br>
-            <input type="reset" value="Reiniciar" onclick="cleanImages()">
-        </form> 
+    <section id="quizSection">
+        <div id="quizContainer">
+            <form id="formQuiz" action="">
+                <label for="">
+                    <p>¿Qué sistema de gestión de contenido es usado por eimportantesmpresas  a nivel gubernamental?</p>
+                    <input type="radio" name="checkW2" id="">WordPres
+                    <input type="radio" name="checkW2" id="">Drupal
+                    <input type="radio" name="checkW2" id="">PrestaShop
+                    <input type="radio" name="checkW2" id="">Magenta
+                </label>
+                <label for="">
+                    <p>¿Cuál de los siguentes tipos de CMS es de licencia gratuita?</p>
+                    <input type="checkbox" name="radioIOT" id="">CMS de código abierto
+                    <input type="checkbox" name="radioIOT" id="">CMS en la nube
+                    <input type="checkbox" name="radioIOT" id="">CMS propietario
+                </label>
+                <input type="submit" value="Comprobar"><br><br>
+                <input type="reset" value="Reiniciar" onclick="cleanImages()">
+            </form> 
+            <div id="checkImages">
+                <img id="checkImg1" class="checkImgs" src="../media/checked.jpg" alt="bien">
+                <img id="checkImg2" class="checkImgs" src="../media/wrong.jpg" alt="mal">
+                <p class="checkImgs">¡Gracias por jugar!</p>
+                </div>
+            </div>
     </section>
 
 </main> 
@@ -121,7 +128,34 @@
     document.getElementById("formQuiz")
     .addEventListener('submit', checkQuiz)
 
-    
+    function checkQuiz(event){
+        event.preventDefault();
+        var checkW2Answers = document.getElementsByName("checkW2")
+        var imgCheckW2 = document.getElementById("checkImg1")
+        var checkW2 = true
+        for (i=0; i<checkW2Answers.length;i++){
+            if(!checkW2Answers[i].checked){
+                checkW2=false
+            }
+        }
+        if(!checkW2){
+            imgCheckW2.src="media/wrong.jpg"
+        }else{
+            imgElement.src="media/checked.jpg"
+        }
+
+        var radioIOTAnswer = document.getElementsByClassName("radioIOT")
+        var imgElement = document.getElementById("checkImg2")
+        if(radioIOTAnswer[0].checked){
+            imgElement.src="media/checked.jpg"
+
+        }else{imgElement.src="media/wrong.jpg"}
+
+        var images=document.getElementsByClassName("checkImgs")
+        for(i =0; i<images.length;i++){
+            images[i].style.visibility = 'visible'
+        }
+    }
 </script>
 </body>
 </html>
