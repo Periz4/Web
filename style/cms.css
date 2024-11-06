@@ -46,30 +46,4 @@ img{
         width: 95%;
     }
 }
-#quizContainer{
-    display: flex;
-    justify-content: space-around;
-    
-}
-#checkImages{
-    display: flex;
-    flex-direction: column;
-}
-.checkImgs{
-    visibility: hidden;
-}
-#checkImages img{
-    height: 30%;
-    width:fit-content;
-    margin: 5px;
-}
 
-@media(max-width : 700px){
-    #toolsContainer{
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-    .tools{
-        width: 95%;
-    }
-}
