@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CMS</title>
     <link rel="stylesheet" href="../style/cms.css">
+    
 </head>
 
 <body>
@@ -99,16 +100,16 @@
             <form id="formQuiz" action="">
                 <label for="">
                     <p>¿Qué sistema de gestión de contenido es usado por eimportantesmpresas  a nivel gubernamental?</p>
-                    <input type="radio" name="checkW2" id="">WordPres
-                    <input type="radio" name="checkW2" id="">Drupal
-                    <input type="radio" name="checkW2" id="">PrestaShop
-                    <input type="radio" name="checkW2" id="">Magenta
+                    <input type="radio" name="radioIOT" id="">WordPres
+                    <input type="radio" name="radioIOT" id="">Drupal
+                    <input type="radio" name="radioIOT" id="">PrestaShop
+                    <input type="radio" name="radioIOT" id="">Magenta
                 </label>
                 <label for="">
                     <p>¿Cuál de los siguentes tipos de CMS es de licencia gratuita?</p>
-                    <input type="checkbox" name="radioIOT" id="">CMS de código abierto
-                    <input type="checkbox" name="radioIOT" id="">CMS en la nube
-                    <input type="checkbox" name="radioIOT" id="">CMS propietario
+                    <input type="checkbox" name="checkW2" id="">CMS de código abierto
+                    <input type="checkbox" name="checkW2" id="">CMS en la nube
+                    <input type="checkbox" name="checkW2" id="">CMS propietario
                 </label>
                 <input type="submit" value="Comprobar"><br><br>
                 <input type="reset" value="Reiniciar" onclick="cleanImages()">
@@ -124,38 +125,8 @@
 </main> 
 
 
-<script>
-    document.getElementById("formQuiz")
-    .addEventListener('submit', checkQuiz)
+<script src="../scipts/cms.js">
 
-    function checkQuiz(event){
-        event.preventDefault();
-        var checkW2Answers = document.getElementsByName("checkW2")
-        var imgCheckW2 = document.getElementById("checkImg1")
-        var checkW2 = true
-        for (i=0; i<checkW2Answers.length;i++){
-            if(!checkW2Answers[i].checked){
-                checkW2=false
-            }
-        }
-        if(!checkW2){
-            imgCheckW2.src="media/wrong.jpg"
-        }else{
-            imgElement.src="media/checked.jpg"
-        }
-
-        var radioIOTAnswer = document.getElementsByClassName("radioIOT")
-        var imgElement = document.getElementById("checkImg2")
-        if(radioIOTAnswer[0].checked){
-            imgElement.src="media/checked.jpg"
-
-        }else{imgElement.src="media/wrong.jpg"}
-
-        var images=document.getElementsByClassName("checkImgs")
-        for(i =0; i<images.length;i++){
-            images[i].style.visibility = 'visible'
-        }
-    }
 </script>
 </body>
 </html>
