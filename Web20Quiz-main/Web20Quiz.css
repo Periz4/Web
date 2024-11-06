@@ -1,0 +1,76 @@
+body{
+    height: fit-content;
+}
+header{
+    height: 10vh;
+    text-align: center;
+    background-image: radial-gradient( 
+        rgba(255,255,255,0.9),rgba(255,255,255,0)),
+        url("media/media_icons.jpg");
+    background-position: bottom;
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin: 0% 5% 0% 5%;
+    border: 5px rgb(190, 141, 124) solid;
+    border-radius: 10px;
+}
+h1{
+    padding-top: 1vh;
+}
+main{
+    margin: 2% 5%;
+}
+div{
+    text-align: justify;
+}
+.intro{
+    background-color:rgb(228, 204, 196);
+    padding: 2%;
+    margin-bottom: 2%;
+}
+article h2{
+    text-align: center;
+}
+#toolsContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tools{
+    width: 44%;
+    padding: 2%;
+    margin: 1%;
+}
+.a{
+    background-color: rgb(153, 179, 226);
+}
+.b{
+    background-color: rgb(189, 216, 207);
+}
+
+#quizContainer{
+    display: flex;
+    justify-content: space-around;
+    
+}
+#checkImages{
+    display: flex;
+    flex-direction: column;
+}
+.checkImgs{
+    visibility: hidden;
+}
+#checkImages img{
+    height: 30%;
+    width:fit-content;
+    margin: 5px;
+}
+
+@media(max-width : 700px){
+    #toolsContainer{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .tools{
+        width: 95%;
+    }
+}
