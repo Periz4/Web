@@ -11,6 +11,7 @@ function checkQuiz(event){
         (!checkW2[2].checked)
     
     }
+    
     if(!checkW2){
         imgCheckW2.src="../media/wrong.jpg"
     }else{
@@ -28,7 +29,7 @@ function checkQuiz(event){
     for(i =0; i<images.length;i++){
         images[i].style.visibility = 'visible'
     }
-}
+
 function cleanImages(){
     var images = document.getElementsByClassName("checkImgs")
     for (i = 0; i<images.length;i++){
