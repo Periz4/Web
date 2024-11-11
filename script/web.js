@@ -11,7 +11,6 @@ function checkQuiz(event){
         (!checkW2[2].checked)
     
     }
-    
     if(!checkW2){
         imgCheckW2.src="../media/wrong.jpg"
     }else{

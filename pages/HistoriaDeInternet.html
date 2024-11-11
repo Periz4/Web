@@ -50,31 +50,41 @@
             <img src="../media/ia.jpg" alt="Inteligencia artificial">
         </div>
     </section>
-    <section>
-        <form action="">
-            <label for="">
-                <p>¿Cual fué el motivo por el que se creó Internet?</p>
-                <input type="radio" name="p1"> Busqueda de información
-                <input type="radio" name="p1"> Protección frente a conflictos
-                <input type="radio" name="p1"> Estudiar en la Universidad
-            </label>
-            <label for="">
-                <p>¿Cual de estas aplicaiones ha desarrollado google?</p>
-                <input type="checkbox" name="p2"> Youtube 
-                <input type="checkbox" name="p2"> Messenger 
-                <input type="checkbox" name="p2"> Gmail 
 
-            </label>
-        
-            </label>
-        </form>
+    <section id="seccionTest">
+        <article class="intro">
+          <h3>TEST historia de Internet</h3>
+          <p>Comprueba tus conocimientos completando este test: </p>
+          <div id="contenedorTest">
+            
+            <form id="test" action="">
+              <label for=""><p>¿Cual de stas aplicaiones ha desarrollado Google?</p></label>
+              <input type="checkbox" name="P1" value="YT"/> YouTube<br>
+              <input type="checkbox" name="P1" value="MS"/> Messenger<br>
+              <input type="checkbox" name="P1" value="GM"/> Gmail <br>
+              <hr>
+              <label for=""><p>¿Cual es el motivo por el que se creó internet?</p></label>
+              <input type="radio" name="P2" value="información">Protección frente a posibles conflictos <br>
+              <input type="radio" name="P2" value="busqueda">Busqueda de información <br>
+              <input type="radio" name="P2" value="estudiar">Como apoyo para llevar a cabo investigaciones<br>
+              <hr>
+              <br><br>
+              <input type="submit" value="¡Comprueba!"><br><br>
+              <input type="reset" value="Limpiar" onclick="cleanImages()">
+            </form>
+            <div id="checkImgs">
+              <img id="imagen1" class="checkImgs" src="../media/checked.jpg" alt="">
+              <img id="imagen2" class="checkImgs" src="../media/wrong.jpg" alt="">
+              <p class="checkImgs">¡Gracias por jugar!</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+    <script src="../script/web.js"></script>
+     
+    
 
 
-    </section>
-
-<script>
-    function (check[p1]);
-
-</script>
 </body>
 </html>
