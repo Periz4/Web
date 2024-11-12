@@ -1,37 +1,52 @@
-document.getElementById("formQuiz")
-.addEventListener('submit', checkQuiz)
 
-function checkQuiz(event){
+document.getElementById('test').addEventListener('submit', function (event) {
     event.preventDefault();
-    var checkW2Answers = document.getElementsByName("checkW2")
-    var imgCheckW2 = document.getElementById("checkImg1")
-    var checkW2 = true
-    if(checkW2[0].checked) and 
-        (checkW2[1].checked) ;and
-        (!checkW2[2].checked)
-    
+    verificarRespuestas();
+ });
+ 
+ function verificarRespuestas() { // Cramos esta función para verificar las respuestas 
+   
+    const checkboxes = Array.from(document.querySelectorAll('input[name="P1"]:checked'));
+    const radios = Array.from(document.querySelectorAll('input[name="P2"]:checked'));
+ 
+    const imagen1 = document.getElementById('imagen1'); 
+    const imagen2 = document.getElementById('imagen2'); 
+   
+   
+    imagen1.style.display = 'none';
+    imagen2.style.display = 'none';
+ 
+    // Señala cuales son las opciones correctas en el checkbox 
+    const opcionesCorrectasP1 = checkboxes.some(checkbox => checkbox.value === 'YT') && 
+                                checkboxes.some(checkbox => checkbox.value === 'GM') &&
+                                checkboxes.length === 2;
+ 
+    const opcionesCorrectasP2 = radios.some(radio => radio.value === 'información');
+ 
+    // Muestra la imagen del tick si las opciones son correctas 
+    if (opcionesCorrectasP1) {
+        imagen1.src = "../media/checked.jpg";
+        imagen1.style.display = 'block';
+    } else {  // Para el resto de respuestas devolverá la imagen de la cruz 
+        imagen1.src = "../media/wrong.jpg";
+        imagen1.style.display = 'block';
     }
-    if(!checkW2){
-        imgCheckW2.src="../media/wrong.jpg"
-    }else{
-        imgElement.src="../media/checked.jpg"
+ 
+    // MUestra la imagen del tick si las opciones son correctas 
+    if (opcionesCorrectasP2) {
+        imagen2.src = "../media/checked.jpg";
+        imagen2.style.display = 'block';
+    } else {  // Para el resto de respuestas devolverá la imagen de la cruz 
+        imagen2.src = "../media/wrong.jpg";
+        imagen2.style.display = 'block';
     }
-
-    var radioIOTAnswer = document.getElementsByName("radioIOT")
-    var imgElement = document.getElementById("checkImg2")
-    if(radioIOTAnswer[1].checked){
-        imgElement.src="../media/checked.jpg"
-
-    }else{imgElement.src="../media/wrong.jpg"}
-
-    var images=document.getElementsByClassName("checkImgs")
-    for(i =0; i<images.length;i++){
-        images[i].style.visibility = 'visible'
-    }
-
-function cleanImages(){
-    var images = document.getElementsByClassName("checkImgs")
-    for (i = 0; i<images.length;i++){
-        images[i].style.visibility = 'hidden'
-    }
-}
+ }
+ 
+ function cleanImages() {
+  
+    const imagen1 = document.getElementById('imagen1');
+    const imagen2 = document.getElementById('imagen2');
+    imagen1.style.display = 'none';
+    imagen2.style.display = 'none';
+ }
+ 
