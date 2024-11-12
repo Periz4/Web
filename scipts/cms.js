@@ -12,7 +12,8 @@ function checkQuiz(event){
             checkW2=true
         }else{
             checkW2=false}
-    }
+    
+
     
     if(!checkW2){
         imgCheckW2.src="../media/wrong.jpg"
@@ -31,7 +32,7 @@ function checkQuiz(event){
     for(i =0; i<images.length;i++){
         images[i].style.visibility = 'visible'
     }
-
+}
 function cleanImages(){             //Quita las fotos con el boton reiniciar
     var images = document.getElementsByClassName("checkImgs")
     for (i = 0; i<images.length;i++){
