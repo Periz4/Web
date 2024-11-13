@@ -49,4 +49,3 @@ document.getElementById('test').addEventListener('submit', function (event) {
     imagen1.style.display = 'none';
     imagen2.style.display = 'none';
  }
- 

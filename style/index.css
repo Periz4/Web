@@ -6,16 +6,17 @@
     background-size: 100%;
     padding: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 33px;
+    font-size: 100px;
     text-align: center;
-    color:rgb(204, 142, 92);
+ 
+    color:#66bac9;
     margin: 100px;
     border: 5px solid rgb(197, 172, 172);
     height: 20vh;
 }
 nav{
     height: 50vh;
-    background-color: rgb(204, 142, 92);
+    background-color: rgb(41, 116, 177);
     color:rgb(0, 0, 0);
     padding: 150px;
     display: flex;
@@ -26,7 +27,7 @@ nav{
     background-color: rgb(0, 255, 221);
     height: 18vh;
     text-align: center;
-    border: 5px solid green;
+    border: 5px solid rgb(0, 51, 128);
     display:flexbox;
     padding: 15px;
 }
