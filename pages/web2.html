@@ -1,45 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>web2</title>
-    <link rel="stylesheet" href="../style/web2.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>web2</title>
+   <link rel="stylesheet" href="../style/web2.css">
 </head>
 <body>
-    <a href="../index.html">
-        <button type="button">Regresar a la página principal</button>
-    </a>
-    <h1 id="WEB 2.0"> Web 2.0 </h1>
-    <h4 id="h4">El término Web 2.0 alude a aquellos sitios web que facilitan compartir información
-        y la colaboración en el World Wide Web.
-    </h4>
-    <section>   
-        <div id="parrafo">
+   <a href="../index.html">
+       <button type="button">Regresar a la página principal</button>
+   </a>
+   <h1 id="WEB 2.0"> Web 2.0 </h1>
+   <h4 id="h4">El término Web 2.0 alude a aquellos sitios web que facilitan compartir información
+       y la colaboración en el World Wide Web.
+   </h4>
+   <section>  
+       <div id="parrafo">
 
-         <p>-La web 2.0 es un fenómeo social que surgió gracias al desarrollo de diversas aplicaciones
-            del internet y establece una distinción entre la primera época de la Web y la segunda que
-            supuso un auge de los blogs y las redes sociales. La Web 2.0 es declarada como la red como
-            plataforma, aquella que distribuye un software como un servicio constantemente actualizado.
-         </p>
-         <p>
-            -También es denominada como "web social" ya que ofrece la posibilidad de elaborar trabajos
-            colaborativos entre varios usuarios. Los usuarios dejan de ser pasivos y se convierten en
-            activos capaces de contribuir en el contenido de la red. Estas herramientas llevadas al
-            ámbito educativo sirven para promover el trabajo en equipo entre los alumnos.
-         </p>
-         <p>
-            -Antes de la llegada de esta nueva versión de la Web, se utilizaban páginas programadas
-            con lenguaje HTML, pero no eran actualizadas frecuentemente. El éxito de las .com dependía
-            de las webs más dinámicas donde los sistemas de gestión de contenido servían páginas HTML 
-            desde una base de datos actualizada. El factor principal de esto era conseguir visitas.
-         </p>
-        </div>
-        <div id="fotos">
-            <img src="../media/web_2-0.jpg" alt="ARPANET">
-            <img src="../media/alumnos.jpeg" alt="World Wide Web">
-            <img src="../media/HTML.webp" alt="Inteligencia artificial">
-        </div>
-    </section>
+
+        <p>-La web 2.0 es un fenómeo social que surgió gracias al desarrollo de diversas aplicaciones
+           del internet y establece una distinción entre la primera época de la Web y la segunda que
+           supuso un auge de los blogs y las redes sociales. La Web 2.0 es declarada como la red como
+           plataforma, aquella que distribuye un software como un servicio constantemente actualizado.
+        </p>
+        <p>
+           -También es denominada como "web social" ya que ofrece la posibilidad de elaborar trabajos
+           colaborativos entre varios usuarios. Los usuarios dejan de ser pasivos y se convierten en
+           activos capaces de contribuir en el contenido de la red. Estas herramientas llevadas al
+           ámbito educativo sirven para promover el trabajo en equipo entre los alumnos.
+        </p>
+        <p>
+           -Antes de la llegada de esta nueva versión de la Web, se utilizaban páginas programadas
+           con lenguaje HTML, pero no eran actualizadas frecuentemente. El éxito de las .com dependía
+           de las webs más dinámicas donde los sistemas de gestión de contenido servían páginas HTML
+           desde una base de datos actualizada. El factor principal de esto era conseguir visitas.
+        </p>
+       </div>
+       <div id="fotos">
+           <img src="../media/web_2-0.jpg" alt="ARPANET">
+           <img src="../media/alumnos.jpeg" alt="World Wide Web">
+           <img src="../media/HTML.webp" alt="Inteligencia artificial">
+       </div>
+   </section>
+
+
+   <section id="seccionTest">
+       <article class="intro">
+         <h3>TEST web 2.0</h3>
+         <p>Comprueba tus conocimientos completando este test: </p>
+         <div id="contenedorTest">
+          
+           <form id="test" action="">
+             <label for=""><p>¿Qué caracteristicas son propias de la web 2.0?</p></label>
+             <input type="checkbox" name="P1" value="YT"/> Surgió debido al desarrollo de aplicaiones de internet<br>
+             <input type="checkbox" name="P1" value="MS"/> Es un tipo de web diseñada como alternativa por si fallaba otro tipos de webs<br>
+             <input type="checkbox" name="P1" value="GM"/> El servicio que proporciona está constantemente actualizado <br>
+             <hr>
+             <label for=""><p>¿Porqué la wb 2.0 es conocida como una web social?</p></label>
+             <input type="radio" name="P2" value="información">Se pueden llevar a cabo trabajos colaborativos<br>
+             <input type="radio" name="P2" value="busqueda">Es un metodo de cominicaión internacional  <br>
+             <input type="radio" name="P2" value="estudiar">Puedes conocer a personas de diferentes paises<br>
+             <hr>
+             <br><br>
+             <input type="submit" value="¡Comprueba!"><br><br>
+             <input type="reset" value="Limpiar" onclick="cleanImages()">
+           </form>
+           <div id="checkImgs">
+             <img id="imagen1" class="checkImgs" src="../media/checked.jpg" alt="">
+             <img id="imagen2" class="checkImgs" src="../media/wrong.jpg" alt="">
+             <p class="checkImgs">¡Gracias por jugar!</p>
+           </div>
+         </div>
+       </article>
+     </section>
+
+
+   <script src="../script/Historia.js"></script>
+   
+  
+
+
+
+
 </body>
 </html>
